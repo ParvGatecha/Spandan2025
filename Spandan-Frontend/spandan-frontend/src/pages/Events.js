@@ -43,41 +43,73 @@ function SportsCard({ title, data }) {
     }
 
     return (
-        <Box mt={8} minW="50vw">
-            <Text fontSize="3xl" fontWeight="bold" mb={4}>
-                <button onClick={toggleOpen}>{isOpen ? '-' : '+'} {title}</button>
-            </Text>
-            {isOpen &&
-                <Grid templateColumns={isDesktop?['repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)', 'repeat(4, 1fr)', 'repeat(5, 1fr)']:['repeat(1,1fr']} gap={4}>
-                    {data.map((sport) => (
-                        <GridItem
-                            key={sport.id}
-                        >
-                            <Link to={`/events/${sport.id}`} as={ReactRouterLink}>
-                                <Flex direction={isDesktop ? 'column' : 'row'} align="center">
-                                    {!isDesktop&&sport.icon && (
-                                        <Box display={'inline-block'} ml={2}>
-                                            <Image src={sport.icon} boxSize="32px" objectFit="contain" />
-                                        </Box>
-                                    )}
-                                    {isDesktop && sport.displayImage && (
-                                        <Box display="inline-block" boxSize="225px" overflow="hidden">
-                                            <Image src={sport.displayImage} boxSize="full" objectFit="cover" />
-                                        </Box>
-                                    )}
-
-                                    <Box p={4} ml={isDesktop ? 4 : 0} _hover={{ boxShadow: "4px 4px 0px rgba(0, 0, 0, 1)", bgGradient: "linear(to-r, #DC35AA, #DC35AA)" }}>
-                                        <Text fontWeight="normal" fontSize={isDesktop?18:30}>
-                                            {sport.name}
-                                        </Text>
-                                    </Box>
-                                </Flex>
-                            </Link>
-                        </GridItem>
-                    ))}
-                </Grid>
+      <Box mt={8} minW="50vw">
+        <Text fontSize="3xl" fontWeight="bold" mb={4}>
+          <button onClick={toggleOpen}>
+            {isOpen ? '-' : '+'} {title}
+          </button>
+        </Text>
+        {isOpen && (
+          <Grid
+            templateColumns={
+              isDesktop
+                ? [
+                    'repeat(1, 1fr)',
+                    'repeat(2, 1fr)',
+                    'repeat(3, 1fr)',
+                    'repeat(4, 1fr)',
+                    'repeat(5, 1fr)',
+                  ]
+                : ['repeat(1,1fr']
             }
-        </Box >
+            gap={4}
+          >
+            {data.map(sport => (
+              <GridItem key={sport.id}>
+                <Link to={`/events/${sport.id}`} as={ReactRouterLink}>
+                  <Flex direction={isDesktop ? 'column' : 'row'} align="center">
+                    {!isDesktop && sport.icon && (
+                      <Box display={'inline-block'} ml={2}>
+                        <Image
+                          src={sport.icon}
+                          boxSize="32px"
+                          objectFit="contain"
+                        />
+                      </Box>
+                    )}
+                    {isDesktop && sport.displayImage && (
+                      <Box
+                        display="inline-block"
+                        boxSize="225px"
+                        overflow="hidden"
+                      >
+                        <Image
+                          src={sport.displayImage}
+                          boxSize="full"
+                          objectFit="cover"
+                        />
+                      </Box>
+                    )}
+
+                    <Box
+                      p={4}
+                      ml={isDesktop ? 4 : 0}
+                      _hover={{
+                        boxShadow: '4px 4px 0px rgba(0, 0, 0, 1)',
+                        bgGradient: 'linear(to-r, #44d130, #44d130)',
+                      }}
+                    >
+                      <Text fontWeight="normal" fontSize={isDesktop ? 18 : 30}>
+                        {sport.name}
+                      </Text>
+                    </Box>
+                  </Flex>
+                </Link>
+              </GridItem>
+            ))}
+          </Grid>
+        )}
+      </Box>
     );
 }
 

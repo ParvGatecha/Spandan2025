@@ -63,7 +63,7 @@ const ListTeam = ({ sport_id, team }) => {
                 mt={8}
                 // rounded="none"
                 _hover={{
-                    bgColor: "red"
+                    bgColor: "green"
                 }}
                 border="1px"
                 borderColor={"black"}

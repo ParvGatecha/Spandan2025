@@ -334,7 +334,7 @@ const Navbar = () => {
       w="100%"
       bg="transparent" // Transparent black background
       zIndex="1000"
-    //   backdropFilter="blur(10px)"
+      //   backdropFilter="blur(10px)"
     >
       <Flex
         align="center"
@@ -344,16 +344,16 @@ const Navbar = () => {
         mx="auto"
       >
         {/* Logo / Title */}
-        < Link href="/" _hover={{ textDecoration: "none" }} >
-                <Text
-                    fontFamily="akshar"
-                    fontSize={'5vh'}
-                    fontWeight="bold"
-                    letterSpacing="widest"
-                >
-                    SPANDAN
-                </Text>
-            </Link >
+        <Link href="/" _hover={{ textDecoration: 'none' }}>
+          <Text
+            fontFamily="akshar"
+            fontSize={'5vh'}
+            fontWeight="bold"
+            letterSpacing="widest"
+          >
+            SPANDAN
+          </Text>
+        </Link>
 
         {/* Desktop Nav Items */}
         {isDesktop ? (
@@ -365,7 +365,7 @@ const Navbar = () => {
                 to={item.href}
                 color="white"
                 fontSize="lg"
-                _hover={{ color: '#DC35AA' }}
+                _hover={{ color: '#44d130' }}
               >
                 {item.label}
               </Link>

@@ -92,7 +92,7 @@ function FooterLink({ href, children }) {
     <Link
       href={href}
       textDecoration="underline"
-      color="#DC35AA"
+      color="#44d130"
       textDecorationThickness="1px"
       textUnderlineOffset="3px"
     >
