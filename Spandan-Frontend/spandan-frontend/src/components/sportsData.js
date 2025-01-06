@@ -170,8 +170,8 @@ const sd = () => {
         },
         {
             "id": 15,
-            "name": "Basketball",
-            "tag": "Basketball",
+            "name": "Basketball 5v5",
+            "tag": "Basketball-5",
             "type": "major",
             "icon": "/sportsicons/Basketball.png",
             "displayImage": "/sportsdisplay/Basketball.gif",
@@ -182,8 +182,8 @@ const sd = () => {
         },
         {
             "id": 16,
-            "name": "Basketball Men 3v3",
-            "tag": "Basketball-M3",
+            "name": "Basketball 3v3",
+            "tag": "Basketball-3",
             "type": "major",
             "icon": "/sportsicons/Basketball.png",
             "displayImage": "/sportsdisplay/Basketball-M3.gif",
@@ -192,18 +192,18 @@ const sd = () => {
             "spoc": [{ "spoc_name": "Mathew Joseph", "spoc_contact": "8451910312" }, { "spoc_name": "Anirudh R Rao", "spoc_contact": "9945803885" }],
             "requirements": { "min_players": 3, "max_players": 4, "min_female": 0, "max_female": 0 }
         },
-        {
-            "id": 17,
-            "name": "Basketball Women",
-            "tag": "Basketball-W",
-            "type": "major",
-            "icon": "/sportsicons/Basketball.png",
-            "displayImage": "/sportsdisplay/Basketball-W.gif",
-            "rules": "/rules/Basketball-3.txt ",
-            "rulesURL": "../../rulespdf/Basketball.pdf",
-            "spoc": [{ "spoc_name": "Mathew Joseph", "spoc_contact": "8451910312" }, { "spoc_name": "Anirudh R Rao", "spoc_contact": "9945803885" }],
-            "requirements": { "min_players": 3, "max_players": 4, "min_female": 3, "max_female": 4 }
-        },
+        // {
+        //     "id": 17,
+        //     "name": "Basketball Women",
+        //     "tag": "Basketball-W",
+        //     "type": "major",
+        //     "icon": "/sportsicons/Basketball.png",
+        //     "displayImage": "/sportsdisplay/Basketball-W.gif",
+        //     "rules": "/rules/Basketball-3.txt ",
+        //     "rulesURL": "../../rulespdf/Basketball.pdf",
+        //     "spoc": [{ "spoc_name": "Mathew Joseph", "spoc_contact": "8451910312" }, { "spoc_name": "Anirudh R Rao", "spoc_contact": "9945803885" }],
+        //     "requirements": { "min_players": 3, "max_players": 4, "min_female": 3, "max_female": 4 }
+        // },
         {
             "id": 18,
             "name": "Valorant",

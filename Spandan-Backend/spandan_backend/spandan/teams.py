@@ -22,6 +22,8 @@ objects = [
     {"name": "Volleyball", "category": "Volleyball", "min_team_size": 7, "max_team_size": 9, "min_females": 0, "min_males": 9},
     {"name": "Basketball", "category": "Basketball", "min_team_size": 5, "max_team_size": 8, "min_females": 0, "min_males": 8},
     {"name": "Basketball-M3", "category": "Basketball", "min_team_size": 3, "max_team_size": 4, "min_females": 0, "min_males": 0},
+    {"name": "Basketball-3", "category": "Basketball", "min_team_size": 3, "max_team_size": 4, "min_females": 0, "min_males": 0},
+    {"name": "Basketball-5", "category": "Basketball", "min_team_size": 5, "max_team_size": 8, "min_females": 0, "min_males": 0},
     {"name": "Basketball-W", "category": "Basketball", "min_team_size": 3, "max_team_size": 4, "min_females": 3, "min_males": 4},
     {"name": "Valorant", "category": "NonMajor", "min_team_size": 5, "max_team_size": 5, "min_females": 0, "min_males": 5},
     {"name": "CodM", "category": "NonMajor", "min_team_size": 5, "max_team_size": 5, "min_females": 0, "min_males": 5},

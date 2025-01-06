@@ -249,7 +249,13 @@ const Homepage = () => {
           align="center"
         >
           <Box background="none" p={4}>
-            <Image src={'Logo123.png'} height={'180px'} />
+            <Image
+              src={
+                'Spandan2025 Post - 1.png'
+              }
+              maxHeight={'50vh'}
+              maxWidth={'50vw'}
+            />
           </Box>
           <Flex
             justifyContent="center"
@@ -257,7 +263,7 @@ const Homepage = () => {
             flexDirection={{ base: 'column', md: 'row' }}
             flexWrap="wrap"
           >
-            <Box>
+            {/* <Box>
               <Heading
                 fontFamily="akshar"
                 fontSize={{ base: '5vh', lg: '5vh' }}
@@ -269,7 +275,7 @@ const Homepage = () => {
               <Text fontSize="2xl" mt="2">
                 24th, 25th and 26th January 2025
               </Text>
-            </Box>
+            </Box> */}
           </Flex>
           <ButtonWithImage />
         </Box>
