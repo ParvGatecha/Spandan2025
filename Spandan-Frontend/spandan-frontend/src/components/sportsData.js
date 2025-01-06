@@ -9,7 +9,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Badminton-MS.gif",
             "rules": "/rules/Badminton.txt ",
             "rulesURL": "../../rulespdf/Badminton.pdf",
-            "spoc": [{ "spoc_name": "Mallikarjun Chakoti", "spoc_contact": "74834 00351" }, { "spoc_name": "Vedant Mangrulkar ", "spoc_contact": "75880 69853" }, { "spoc_name": "Akhil", "spoc_contact": "76719 60642" }],
+            "spoc": [{ "spoc_name": "Sasank", "spoc_contact": "7780597533" }, { "spoc_name": "Mithilesh ", "spoc_contact": "9591544183" }, { "spoc_name": "Akul Anhith", "spoc_contact": "9491259683" }],
             "requirements": { "min_players": 1, "max_players": 1, "min_female": 0, "max_female": 0 }
         },
         {
@@ -21,7 +21,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Badminton-MD.gif",
             "rules": "/rules/Badminton.txt ",
             "rulesURL": "../../rulespdf/Badminton.pdf",
-            "spoc": [{ "spoc_name": "Mallikarjun Chakoti", "spoc_contact": "74834 00351" }, { "spoc_name": "Vedant Mangrulkar ", "spoc_contact": "75880 69853" }, { "spoc_name": "Akhil", "spoc_contact": "76719 60642" }],
+            "spoc": [{ "spoc_name": "Sasank", "spoc_contact": "7780597533" }, { "spoc_name": "Mithilesh ", "spoc_contact": "9591544183" }, { "spoc_name": "Akul Anhith", "spoc_contact": "9491259683" }],
             "requirements": { "min_players": 2, "max_players": 2, "min_female": 0, "max_female": 0 }
         },
         {
@@ -33,7 +33,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Badminton-WS.gif",
             "rules": "/rules/Badminton.txt ",
             "rulesURL": "../../rulespdf/Badminton.pdf",
-            "spoc": [{ "spoc_name": "Mallikarjun Chakoti", "spoc_contact": "74834 00351" }, { "spoc_name": "Vedant Mangrulkar ", "spoc_contact": "75880 69853" }, { "spoc_name": "Akhil", "spoc_contact": "76719 60642" }],
+            "spoc": [{ "spoc_name": "Sasank", "spoc_contact": "7780597533" }, { "spoc_name": "Mithilesh ", "spoc_contact": "9591544183" }, { "spoc_name": "Akul Anhith", "spoc_contact": "9491259683" }],
             "requirements": { "min_players": 1, "max_players": 1, "min_female": 1, "max_female": 1 }
         },
         {
@@ -45,7 +45,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Badminton-WD.gif",
             "rules": "/rules/Badminton.txt ",
             "rulesURL": "../../rulespdf/Badminton.pdf",
-            "spoc": [{ "spoc_name": "Mallikarjun Chakoti", "spoc_contact": "74834 00351" }, { "spoc_name": "Vedant Mangrulkar ", "spoc_contact": "75880 69853" }, { "spoc_name": "Akhil", "spoc_contact": "76719 60642" }],
+            "spoc": [{ "spoc_name": "Sasank", "spoc_contact": "7780597533" }, { "spoc_name": "Mithilesh ", "spoc_contact": "9591544183" }, { "spoc_name": "Akul Anhith", "spoc_contact": "9491259683" }],
             "requirements": { "min_players": 2, "max_players": 2, "min_female": 2, "max_female": 2 }
         },
         {
@@ -57,7 +57,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Badminton-MiD.gif",
             "rules": "/rules/Badminton.txt ",
             "rulesURL": "../../rulespdf/Badminton.pdf",
-            "spoc": [{ "spoc_name": "Mallikarjun Chakoti", "spoc_contact": "74834 00351" }, { "spoc_name": "Vedant Mangrulkar ", "spoc_contact": "75880 69853" }, { "spoc_name": "Akhil", "spoc_contact": "76719 60642" }],
+            "spoc": [{ "spoc_name": "Sasank", "spoc_contact": "7780597533" }, { "spoc_name": "Mithilesh ", "spoc_contact": "9591544183" }, { "spoc_name": "Akul Anhith", "spoc_contact": "9491259683" }],
             "requirements": { "min_players": 2, "max_players": 2, "min_female": 1, "max_female": 1 }
         },
         {
@@ -69,7 +69,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/TableTennis-MS.gif",
             "rules": "/rules/TableTennis-S.txt ",
             "rulesURL": "../../rulespdf/TableTennis.pdf",
-            "spoc": [{ "spoc_name": "Bhavya Kapadia", "spoc_contact": "9082733928" }, { "spoc_name": "Kandarp Dave", "spoc_contact": "9023194943" }],
+            "spoc": [{ "spoc_name": "Nilay Kamat", "spoc_contact": "9011496298" }, { "spoc_name": "Lakshya Kapoor", "spoc_contact": "9742963850" }],
             "requirements": { "min_players": 1, "max_players": 1, "min_female": 0, "max_female": 0 }
         },
         {
@@ -81,7 +81,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/TableTennis-MD.gif",
             "rules": "/rules/TableTennis-D.txt ",
             "rulesURL": "../../rulespdf/TableTennis.pdf",
-            "spoc": [{ "spoc_name": "Bhavya Kapadia", "spoc_contact": "9082733928" }, { "spoc_name": "Kandarp Dave", "spoc_contact": "9023194943" }],
+            "spoc": [{ "spoc_name": "Nilay Kamat", "spoc_contact": "9011496298" }, { "spoc_name": "Lakshya Kapoor", "spoc_contact": "9742963850" }],
             "requirements": { "min_players": 2, "max_players": 2, "min_female": 0, "max_female": 0 }
         },
         {
@@ -93,7 +93,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/TableTennis-WS.gif",
             "rules": "/rules/TableTennis-S.txt ",
             "rulesURL": "../../rulespdf/TableTennis.pdf",
-            "spoc": [{ "spoc_name": "Bhavya Kapadia", "spoc_contact": "9082733928" }, { "spoc_name": "Kandarp Dave", "spoc_contact": "9023194943" }],
+            "spoc": [{ "spoc_name": "Nilay Kamat", "spoc_contact": "9011496298" }, { "spoc_name": "Lakshya Kapoor", "spoc_contact": "9742963850" }],
             "requirements": { "min_players": 1, "max_players": 1, "min_female": 1, "max_female": 1 }
         },
         {
@@ -105,7 +105,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/TableTennis-WD.jpeg",
             "rules": "/rules/TableTennis-D.txt ",
             "rulesURL": "../../rulespdf/TableTennis.pdf",
-            "spoc": [{ "spoc_name": "Bhavya Kapadia", "spoc_contact": "9082733928" }, { "spoc_name": "Kandarp Dave", "spoc_contact": "9023194943" }],
+            "spoc": [{ "spoc_name": "Nilay Kamat", "spoc_contact": "9011496298" }, { "spoc_name": "Lakshya Kapoor", "spoc_contact": "9742963850" }],
             "requirements": { "min_players": 2, "max_players": 2, "min_female": 2, "max_female": 2 }
         },
         {
@@ -117,7 +117,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/TableTennis-MiD.avif",
             "rules": "/rules/TableTennis-D.txt ",
             "rulesURL": "../../rulespdf/TableTennis.pdf",
-            "spoc": [{ "spoc_name": "Bhavya Kapadia", "spoc_contact": "9082733928" }, { "spoc_name": "Kandarp Dave", "spoc_contact": "9023194943" }],
+            "spoc": [{ "spoc_name": "Nilay Kamat", "spoc_contact": "9011496298" }, { "spoc_name": "Lakshya Kapoor", "spoc_contact": "9742963850" }],
             "requirements": { "min_players": 2, "max_players": 2, "min_female": 1, "max_female": 1 }
         },
         {
@@ -129,7 +129,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Throwball.gif",
             "rules": "/rules/Throwball.txt ",
             "rulesURL": "../../rulespdf/Throwball(Mixed).pdf",
-            "spoc": [{ "spoc_name": "Yukta ", "spoc_contact": "7022095151" }, { "spoc_name": "Ankrutee ", "spoc_contact": "9246809610" }],
+            "spoc": [{ "spoc_name": "Ananya V", "spoc_contact": "8105851863" }, { "spoc_name": "Kavya Gupta", "spoc_contact": "7842106973" }],
             "requirements": { "min_players": 8, "max_players": 10, "min_female": 2, "max_female": 9 }
         },
         {
@@ -141,7 +141,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Football.gif",
             "rules": "/rules/Football.txt ",
             "rulesURL": "../../rulespdf/Football.pdf",
-            "spoc": [{ "spoc_name": "Rishit Mane", "spoc_contact": "77381 47865" }, { "spoc_name": "Sourav Dileep", "spoc_contact": "73563 11283" }, { "spoc_name": "Kushagra Singh", "spoc_contact": "96609 38712" }],
+            "spoc": [{ "spoc_name": "Akshat Betala", "spoc_contact": "9740340860" }, { "spoc_name": "Ashirwad Mishra", "spoc_contact": "8160863423" }, { "spoc_name": "Sahas Sangal", "spoc_contact": "7570000263" }],
             "requirements": { "min_players": 6, "max_players": 9, "min_female": 0, "max_female": 9 }
         },
         {
@@ -153,7 +153,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Cricket.gif",
             "rules": "/rules/Cricket.txt ",
             "rulesURL": "../../rulespdf/Cricket.pdf",
-            "spoc": [{ "spoc_name": "Rithik Bansal", "spoc_contact": "9777297550" }, { "spoc_name": "Aditya Kaka", "spoc_contact": "9900149539" }, { "spoc_name": "Maheedhar", "spoc_contact": "9704525404" }],
+            "spoc": [{ "spoc_name": "Niteesh.Yerra", "spoc_contact": "7337080666" }, { "spoc_name": "Pammi Nanda", "spoc_contact": "8147807506" },{ "spoc_name": "Bharat Dhulgond", "spoc_contact": "8824119467" }],
             "requirements": { "min_players": 10, "max_players": 12, "min_female": 0, "max_female": 12 }
         },
         {
@@ -165,7 +165,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Volleyball.gif",
             "rules": "/rules/Volleyball.txt ",
             "rulesURL": "../../rulespdf/Volleyball.pdf",
-            "spoc": [{ "spoc_name": "Jack", "spoc_contact": "7207537377" }, { "spoc_name": "Gouse Peer", "spoc_contact": "9346659784" }],
+            "spoc": [{ "spoc_name": "Josh Jack Thomson", "spoc_contact": "'+91 72075 37377" }, { "spoc_name": "Adarsha Reddy", "spoc_contact": "7842106973" }],
             "requirements": { "min_players": 7, "max_players": 9, "min_female": 0, "max_female": 9 }
         },
         {
@@ -177,7 +177,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Basketball.gif",
             "rules": "/rules/Basketball.txt ",
             "rulesURL": "../../rulespdf/Basketball.pdf",
-            "spoc": [{ "spoc_name": "Vishruth Vijay", "spoc_contact": "7022271553" }, { "spoc_name": "Siddeshwar", "spoc_contact": "8050597300" }],
+            "spoc": [{ "spoc_name": "Mathew Joseph", "spoc_contact": "8451910312" }, { "spoc_name": "Anirudh R Rao", "spoc_contact": "9945803885" }],
             "requirements": { "min_players": 5, "max_players": 8, "min_female": 0, "max_female": 8 }
         },
         {
@@ -189,7 +189,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Basketball-M3.gif",
             "rules": "/rules/Basketball-3.txt ",
             "rulesURL": "../../rulespdf/Basketball.pdf",
-            "spoc": [{ "spoc_name": "Vishruth Vijay", "spoc_contact": "7022271553" }, { "spoc_name": "Siddeshwar", "spoc_contact": "8050597300" }],
+            "spoc": [{ "spoc_name": "Mathew Joseph", "spoc_contact": "8451910312" }, { "spoc_name": "Anirudh R Rao", "spoc_contact": "9945803885" }],
             "requirements": { "min_players": 3, "max_players": 4, "min_female": 0, "max_female": 0 }
         },
         {
@@ -201,7 +201,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Basketball-W.gif",
             "rules": "/rules/Basketball-3.txt ",
             "rulesURL": "../../rulespdf/Basketball.pdf",
-            "spoc": [{ "spoc_name": "Vishruth Vijay", "spoc_contact": "7022271553" }, { "spoc_name": "Siddeshwar", "spoc_contact": "8050597300" }],
+            "spoc": [{ "spoc_name": "Mathew Joseph", "spoc_contact": "8451910312" }, { "spoc_name": "Anirudh R Rao", "spoc_contact": "9945803885" }],
             "requirements": { "min_players": 3, "max_players": 4, "min_female": 3, "max_female": 4 }
         },
         {
@@ -213,7 +213,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Valorant.gif",
             "rules": "/rules/Valorant.txt ",
             "rulesURL": "../../rulespdf/Valorant.pdf",
-            "spoc": [{ "spoc_name": "Harshith", "spoc_contact": "91777 85261" }, { "spoc_name": "Aryan", "spoc_contact": "76709 92002" }],
+            "spoc": [{ "spoc_name": "Ananthula Harshith Reddy", "spoc_contact": "9177785261" }, { "spoc_name": "Mohit Gupta ", "spoc_contact": "8733807658" }],
             "requirements": { "min_players": 5, "max_players": 5, "min_female": 0, "max_female": 5 }
         },
         {
@@ -225,7 +225,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/CodM.gif",
             "rules": "/rules/CoDM.txt ",
             "rulesURL": "../../rulespdf/CoDM.pdf",
-            "spoc": [{ "spoc_name": "Tanish", "spoc_contact": "79737 87028" },{ "spoc_name": "Aditya Priyadarshi", "spoc_contact": "77629 80068" }],
+            "spoc": [{ "spoc_name": "Subhash H", "spoc_contact": "9606292707" },{ "spoc_name": "Kunal Mittal", "spoc_contact": "6283322581" }],
             "requirements": { "min_players": 5, "max_players": 5, "min_female": 0, "max_female": 5 }
         },
         {
@@ -237,7 +237,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Fifa.gif",
             "rules": "/rules/Fifa.txt ",
             "rulesURL": "../../rulespdf/Fifa.pdf",
-            "spoc": [{ "spoc_name": "Keshav Goyal", "spoc_contact": "89680 76237" }, { "spoc_name": "Aaditya Gole", "spoc_contact": "79725 13736" }],
+            "spoc": [{ "spoc_name": "Deomani Singh ", "spoc_contact": "8959999508" }],
             "requirements": { "min_players": 1, "max_players": 1, "min_female": 0, "max_female": 1 }
         },
         {
@@ -249,7 +249,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Fifa-D.gif",
             "rules": "/rules/Fifa.txt ",
             "rulesURL": "../../rulespdf/Fifa.pdf",
-            "spoc": [{ "spoc_name": "Keshav Goyal", "spoc_contact": "89680 76237" }, { "spoc_name": "Aaditya Gole", "spoc_contact": "79725 13736" }],
+            "spoc": [{ "spoc_name": "Deomani Singh ", "spoc_contact": "8959999508" }],
             "requirements": { "min_players": 2, "max_players": 2, "min_female": 0, "max_female": 2 }
         },
         {
@@ -261,7 +261,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/GullyCricket.gif",
             "rules": "/rules/GullyCricket.txt ",
             "rulesURL": "../../rulespdf/GullyCricket.pdf",
-            "spoc": [{ "spoc_name": "Allu Pavan Karthik Reddy", "spoc_contact": "7795933534" }, { "spoc_name": "Heet Vasani", "spoc_contact": "9409732131" }],
+            "spoc": [{ "spoc_name": "Parthiv", "spoc_contact": "9883015685" }, { "spoc_name": "Thrilochan Reddy ", "spoc_contact": "7386743487" }],
             "requirements": { "min_players": 5, "max_players": 6, "min_female": 1, "max_female": 6 }
         },
         {
@@ -273,7 +273,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/CR.gif",
             "rules": "/rules/ClashRoyale.txt ",
             "rulesURL": "../../rulespdf/ClashRoyale.pdf",
-            "spoc": [{ "spoc_name": "Narayana Udayagiri", "spoc_contact": "90329 5945" }],
+            "spoc": [{ "spoc_name": "Nikunj Mahajan", "spoc_contact": "9797959937" }],
             "requirements": { "min_players": 1, "max_players": 1, "min_female": 0, "max_female": 1 }
         },
         {
@@ -285,7 +285,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Chess.gif",
             "rules": "/rules/Chess.txt ",
             "rulesURL": "../../rulespdf/Chess.pdf",
-            "spoc": [{ "spoc_name": "Rishi", "spoc_contact": "7981569233" }, { "spoc_name": "Owais", "spoc_contact": "8296177123" }],
+            "spoc": [{ "spoc_name": "Satyam Ambi", "spoc_contact": "8767207131" }, { "spoc_name": "Parsania Ramya Parulbhai", "spoc_contact": "7990558802" }],
             "requirements": { "min_players": 1, "max_players": 1, "min_female": 0, "max_female": 1 }
         },
         {
@@ -297,8 +297,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Gym.gif",
             "rules": "/rules/Spandan_Powerlifting.txt ",
             "rulesURL": "../../rulespdf/Spandan_powerlifting.pdf",
-            "spoc": [{ "spoc_name": "Sparsh", "spoc_contact": "9479644539" },
-            { "spoc_name": "Vidhu Arora", "spoc_contact": "9501969884" }],
+            "spoc": [{ "spoc_name": "Nishant", "spoc_contact": "9887155500" },{ "spoc_name": "Harjot", "spoc_contact": "8851366538" }],
             "requirements": { "min_players": 1, "max_players": 1, "min_female": 0, "max_female": 0 }
         },
         {
@@ -310,8 +309,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Gym-W.gif",
             "rules": "/rules/Spandan_Powerlifting.txt ",
             "rulesURL": "../../rulespdf/Spandan_powerlifting.pdf",
-            "spoc": [{ "spoc_name": "Sparsh", "spoc_contact": "9479644539" },
-            { "spoc_name": "Vidhu Arora", "spoc_contact": "9501969884" }],
+            "spoc": [{ "spoc_name": "Nishant", "spoc_contact": "9887155500" },{ "spoc_name": "Harjot", "spoc_contact": "8851366538" }],
             "requirements": { "min_players": 1, "max_players": 1, "min_female": 1, "max_female": 1 }
         },
         {
@@ -323,7 +321,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Carroms.gif",
             "rules": "/rules/Carroms.txt ",
             "rulesURL": "../../rulespdf/Carroms.pdf",
-            "spoc": [{ "spoc_name": "Keerthan", "spoc_contact": "6281845781" }, { "spoc_name": "Leela Vamsi", "spoc_contact": "93983 24355" }],
+            "spoc": [{ "spoc_name": "Arasada Sai Venkata Vamsidhar", "spoc_contact": "8501824685" }, { "spoc_name": "Nikhil Sharma ", "spoc_contact": "8920972553" }],
             "requirements": { "min_players": 2, "max_players": 2, "min_female": 0, "max_female": 2 }
         },
         {
@@ -335,8 +333,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/TugOfWar.gif",
             "rules": "/rules/TugOfWar.txt ",
             "rulesURL": "../../rulespdf/TugOfWar.pdf",
-            "spoc": [{ "spoc_name": "Sparsh", "spoc_contact": "9479644539" },
-            { "spoc_name": "Vidhu Arora", "spoc_contact": "9501969884" }],
+            "spoc": [{ "spoc_name": "Madhav", "spoc_contact": "" },{ "spoc_name": "Lesin", "spoc_contact": " 94484 48371" },{ "spoc_name": "Mayank", "spoc_contact": "" },{ "spoc_name": "Manav", "spoc_contact": "" }],
             "requirements": { "min_players": 5, "max_players": 7, "min_female": 0, "max_female": 0 }
         },
         {
@@ -348,8 +345,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/TugOfWar-W.gif",
             "rules": "/rules/TugOfWar.txt ",
             "rulesURL": "../../rulespdf/TugOfWar.pdf",
-            "spoc": [{ "spoc_name": "Sparsh", "spoc_contact": "9479644539" },
-            { "spoc_name": "Vidhu Arora", "spoc_contact": "9501969884" }],
+            "spoc": [{ "spoc_name": "Madhav", "spoc_contact": "" },{ "spoc_name": "Lesin", "spoc_contact": " 94484 48371" },{ "spoc_name": "Mayank", "spoc_contact": "" },{ "spoc_name": "Manav", "spoc_contact": "" }],
             "requirements": { "min_players": 5, "max_players": 7, "min_female": 5, "max_female": 7 }
         },
         {
@@ -361,7 +357,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Tennis.gif",
             "rules": "/rules/Tennis.txt ",
             "rulesURL": "../../rulespdf/Tennis.pdf",
-            "spoc": [{ "spoc_name": "Vikas K", "spoc_contact": "8762175731" }, { "spoc_name": "Kalyan ", "spoc_contact": "9701682407" }],
+            "spoc": [{ "spoc_name": "Nori Meher Ashish", "spoc_contact": "9977777012" }, { "spoc_name": "Praveen Peter Jay ", "spoc_contact": "7337637263" }],
             "requirements": { "min_players": 1, "max_players": 1, "min_female": 0, "max_female": 1 }
         },
         {
@@ -373,7 +369,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Tennis-D.gif",
             "rules": "/rules/Tennis.txt ",
             "rulesURL": "../../rulespdf/Tennis.pdf",
-            "spoc": [{ "spoc_name": "Vikas K", "spoc_contact": "8762175731" }, { "spoc_name": "Kalyan ", "spoc_contact": "9701682407" }],
+            "spoc": [{ "spoc_name": "Nori Meher Ashish", "spoc_contact": "9977777012" }, { "spoc_name": "Praveen Peter Jay ", "spoc_contact": "7337637263" }],
             "requirements": { "min_players": 2, "max_players": 2, "min_female": 0, "max_female": 2 }
         },
         {
@@ -385,7 +381,7 @@ const sd = () => {
             "displayImage": "/sportsdisplay/bgmi.gif",
             "rules": "/rules/BGMI.txt ",
             "rulesURL": "../../rulespdf/BGMI.pdf",
-            "spoc": [{ "spoc_name": "Rutul Patel ", "spoc_contact": "87589 87403" },{ "spoc_name": "Rishi Patel", "spoc_contact": "83206 00705" }],
+            "spoc": [{ "spoc_name": "U Trivedh  ", "spoc_contact": "7207602910" },{ "spoc_name": "Naman Jindal ", "spoc_contact": "9417007767" }],
             "requirements": { "min_players": 5, "max_players": 5, "min_female": 0, "max_female": 5 }
         },
         {
@@ -397,8 +393,8 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Pentathlon.png",
             "rules": "/rules/Pentathlon.txt ",
             "rulesURL": "../../rulespdf/Pentathlon.pdf",
-            "spoc": [{ "spoc_name": "Sparsh", "spoc_contact": "9479644539" },
-            { "spoc_name": "Vidhu Arora", "spoc_contact": "9501969884" }],
+            "spoc": [{ "spoc_name": "Nishant", "spoc_contact": "9887155500" },{ "spoc_name": "Harjot", "spoc_contact": "8851366538" }],
+
             "requirements": { "min_players": 1, "max_players": 1, "min_female": 0, "max_female": 0 }
         },
         {
@@ -410,8 +406,8 @@ const sd = () => {
             "displayImage": "/sportsdisplay/Pentathlon.png",
             "rules": "/rules/Pentathlon.txt ",
             "rulesURL": "../../rulespdf/Pentathlon.pdf",
-            "spoc": [{ "spoc_name": "Sparsh", "spoc_contact": "9479644539" },
-            { "spoc_name": "Vidhu Arora", "spoc_contact": "9501969884" }],
+            "spoc": [{ "spoc_name": "Nishant", "spoc_contact": "9887155500" },{ "spoc_name": "Harjot", "spoc_contact": "8851366538" }],
+
             "requirements": { "min_players": 1, "max_players": 1, "min_female": 1, "max_female": 1 }
         },
     ]

@@ -120,7 +120,7 @@ export default function Footer() {
       bottom="0"
       width="100%"
       paddingY="7"
-      bgColor="transparent"
+      bgColor="rgb(255, 255, 255,0.07)"
       zIndex="10"
       borderTop="1px"
     >

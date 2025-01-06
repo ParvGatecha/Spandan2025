@@ -332,9 +332,9 @@ const Navbar = () => {
       top="0"
       left="0"
       w="100%"
-      bg="transparent" // Transparent black background
+      bg="rgb(255,255,255,0.07)" // Transparent black background
       zIndex="1000"
-      //   backdropFilter="blur(10px)"
+      backdropFilter="blur(10px)"
     >
       <Flex
         align="center"
@@ -347,7 +347,7 @@ const Navbar = () => {
         <Link href="/" _hover={{ textDecoration: 'none' }}>
           <Text
             fontFamily="akshar"
-            fontSize={'5vh'}
+            fontSize={'7vh'}
             fontWeight="bold"
             letterSpacing="widest"
           >
@@ -364,7 +364,7 @@ const Navbar = () => {
                 as={ReactRouterLink}
                 to={item.href}
                 color="white"
-                fontSize="lg"
+                fontSize="4vh"
                 _hover={{ color: '#44d130' }}
               >
                 {item.label}
