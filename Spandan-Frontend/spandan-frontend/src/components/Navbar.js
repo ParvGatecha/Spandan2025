@@ -296,8 +296,7 @@
 
 
 
-
-import React, { useState } from 'react';
+import { useState, useEffect, React } from 'react';
 import {
   Box,
   Flex,
@@ -312,7 +311,12 @@ import {
   VStack,
   useDisclosure,
   useMediaQuery,
+  Button,
 } from '@chakra-ui/react';
+import axios from '../AxiosConfig';
+import { useNavigate } from 'react-router-dom';
+import Blockies from 'react-18-blockies';
+import { motion } from 'framer-motion';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { Link as ReactRouterLink } from 'react-router-dom';
 
@@ -322,9 +326,69 @@ const items = [
   { label: 'Team', href: '/about' },
 ];
 
+const ProfileBlock = () => {
+  const [user, setUser] = useState(null);
+  const navigate = useNavigate();
+  useEffect(() => {
+    axios
+      .get('/user/create/', {
+        params: { email: localStorage.getItem('email') },
+      })
+      .then(res => {
+        setUser(res.data);
+      })
+      .catch(error => {
+        if (error.response?.status === 401) {
+          console.log('User not authorized to access this endpoint');
+        } else {
+          console.log('Error occurred:', error);
+        }
+      });
+  }, []);
+
+  return (
+    user && (
+      <Link
+        _hover={{ textDecoration: 'none' }}
+        as={ReactRouterLink}
+        to="/profile"
+      >
+        <Button
+          variant="custom"
+          bg="transparent"
+          display="flex"
+          alignItems="center"
+          as={motion.button}
+          color={"white"}
+          whileTap={{ scale: 0.9 }}
+          _hover={{ bg: '#44d130', boxShadow: '4px 4px 0px rgba(0, 0, 0, 1)' }}
+          w="full"
+        >
+          <Blockies
+            seed="Random Name"
+            scale={3}
+            color="blue"
+            bgColor="red"
+            spotColor="blue"
+            className="identicon"
+          />
+          <Box marginLeft="1rem">
+            <Text fontFamily="heading" fontSize={'25'} fontWeight={'normal'}>
+              {user.user_name.length > 10
+                ? `${user.user_name.substring(0, 10)}...`
+                : user.user_name}
+            </Text>
+          </Box>
+        </Button>
+      </Link>
+    )
+  );
+};
+
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [isDesktop] = useMediaQuery('(min-width: 1024px)');
+  const isAuthenticated = localStorage.getItem('login');
 
   return (
     <Box
@@ -332,7 +396,7 @@ const Navbar = () => {
       top="0"
       left="0"
       w="100%"
-      bg="rgb(255,255,255,0.07)" // Transparent black background
+      bg="rgb(255,255,255,0.07)"
       zIndex="1000"
       backdropFilter="blur(10px)"
     >
@@ -370,42 +434,84 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
+            {isAuthenticated ? (
+              <ProfileBlock />
+            ) : (
+              <Link
+                _hover={{ textDecoration: 'none' }}
+                as={ReactRouterLink}
+                to="/login"
+              >
+                <Button
+                  variant="link"
+                  as={motion.button}
+                  whileTap={{ scale: 0.9 }}
+                  color={'white'}
+                  fontFamily="heading"
+                  fontSize={'25'}
+                  fontWeight={'medium'}
+                  w="full"
+                  _hover={{ color: '#DC35AA' }}
+                >
+                  Login
+                </Button>
+              </Link>
+            )}
           </HStack>
         ) : (
-          // Mobile Hamburger Menu
           <IconButton
             icon={<HamburgerIcon />}
-            variant="outline"
-            color="white"
             onClick={onOpen}
+            variant="outline"
             aria-label="Open Menu"
           />
         )}
       </Flex>
 
       {/* Mobile Drawer */}
-      {!isDesktop && (
-        <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
-          <DrawerOverlay />
-          <DrawerContent bg="black">
-            <DrawerCloseButton color="white" />
-            <VStack spacing="6" mt="12" align="start" px="6">
-              {items.map(item => (
-                <Link
-                  key={item.label}
-                  as={ReactRouterLink}
-                  to={item.href}
-                  color="white"
-                  fontSize="xl"
-                  onClick={onClose}
+      <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
+        <DrawerOverlay />
+        <DrawerContent bg="black">
+          <DrawerCloseButton />
+          <VStack spacing="4" mt="8">
+            {items.map(item => (
+              <Link
+                key={item.label}
+                as={ReactRouterLink}
+                to={item.href}
+                color="white"
+                fontSize="2xl"
+                onClick={onClose}
+              >
+                {item.label}
+              </Link>
+            ))}
+            {isAuthenticated ? (
+              <ProfileBlock />
+            ) : (
+              <Link
+                _hover={{ textDecoration: 'none' }}
+                as={ReactRouterLink}
+                to="/login"
+              >
+                <Button
+                  variant="link"
+                  as={motion.button}
+                  whileTap={{ scale: 0.9 }}
+                  color={'white'}
+                  fontFamily="heading"
+                  fontSize={'25'}
+                  fontWeight={'medium'}
+                  w="full"
+                  _hover={{ color: '#DC35AA' }}
                 >
-                  {item.label}
-                </Link>
-              ))}
-            </VStack>
-          </DrawerContent>
-        </Drawer>
-      )}
+                  Login
+                </Button>
+              </Link>
+            )}
+          </VStack>
+        </DrawerContent>
+      </Drawer>
     </Box>
   );
 };
