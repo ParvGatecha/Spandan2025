@@ -451,7 +451,7 @@ const Navbar = () => {
                   fontSize={'25'}
                   fontWeight={'medium'}
                   w="full"
-                  _hover={{ color: '#DC35AA' }}
+                  _hover={{ color: '#44d130' }}
                 >
                   Login
                 </Button>

@@ -1,5 +1,6 @@
 import { Formik, Field, Form } from 'formik';
 import axios from "../AxiosConfig";
+import { useToast } from '@chakra-ui/react';
 import {
     Flex,
     Stack,
@@ -37,6 +38,7 @@ const Signup = () => {
     const handleRefresh = () => {
         window.location.reload();
     };
+    const toast = useToast();
     const validateEmail = (value) => {
         let error;
         if (!value) {
@@ -164,6 +166,8 @@ const Signup = () => {
         console.log('Form submitted successfully.');
         actions.setSubmitting(false);
     };
+
+    
 
     return (
         // <Container page_name="Signup">

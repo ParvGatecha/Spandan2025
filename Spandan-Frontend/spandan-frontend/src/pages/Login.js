@@ -72,90 +72,114 @@ export default function Login() {
     };
 
     return (
-        <Container page_name="Login">
-            <Flex
-                align={'center'}
-                justify={'center'}
-            >
-                <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
-                    <Stack align={'center'}>
-                        <Heading fontSize={'4xl'}>
-                            Sign in using your IIITB account
-                        </Heading>
+      <Container page_name="Login">
+        <Flex align={'center'} justify={'center'}>
+          <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
+            <Stack align={'center'}>
+              <Heading fontSize={'4xl'}>
+                Sign in using your IIITB account
+              </Heading>
 
-                        {/* <Text color="red" fontWeight={"bold"} fontSize={"30"}>
+              {/* <Text color="red" fontWeight={"bold"} fontSize={"30"}>
                             IMPORTANT: CLICK ON FORGOT PASSWORD IF YOU ARE LOGGING IN FOR THE FIRST TIME
                         </Text> */}
-                    </Stack>
-                    <Box bg={useColorModeValue('black', 'gray.700')} border="2px" p={8}>
-                        <Formik initialValues={{ email: '', password: '', rememberMe: true }} onSubmit={handleSubmit}>
-                            {({ isSubmitting }) => (
-                                <Form>
-                                    <Stack spacing={4}>
-                                        <Field name="email" >
-                                            {({ field, form }) => (
-                                                <FormControl
-                                                    isInvalid={form.errors.email && form.touched.email}
-                                                    isRequired
-                                                >
-                                                    <FormLabel>Email address</FormLabel>
-                                                    <Input type="email" {...field} border={'1px'} rounded='0' bgColor={'whiteAlpha.500'} placeholder={'your-email@iiitb.ac.in'} _placeholder={{color:'white'}}/>
-                                                    {form.errors.email && form.touched.email && (
-                                                        <FormErrorMessage>{form.errors.email}</FormErrorMessage>
-                                                    )}
-                                                </FormControl>
-                                            )}
-                                        </Field>
-                                        <Field name="password">
-                                            {({ field }) => (
-                                                <FormControl isRequired>
-                                                    <FormLabel>Password</FormLabel>
-                                                    <Input type="password" {...field} border={'1px'} rounded='0' bgColor={'whiteAlpha.500'} placeholder={'**********'} _placeholder={{color:'white'}}/>
-                                                </FormControl>
-                                            )}
-                                        </Field>
-                                        <Stack spacing={10}>
-                                            <Stack
-                                                direction={{ base: 'column', sm: 'row' }}
-                                                align={'start'}
-                                                justify={'space-between'}
-                                            >
-                                                {/* <Field name="rememberMe">
+            </Stack>
+            <Box backdropFilter="blur(10px)" border={'1px'} p={8}>
+              <Formik
+                initialValues={{ email: '', password: '', rememberMe: true }}
+                onSubmit={handleSubmit}
+              >
+                {({ isSubmitting }) => (
+                  <Form>
+                    <Stack spacing={4}>
+                      <Field name="email">
+                        {({ field, form }) => (
+                          <FormControl
+                            isInvalid={form.errors.email && form.touched.email}
+                            isRequired
+                          >
+                            <FormLabel>Email address</FormLabel>
+                            <Input
+                              type="email"
+                              {...field}
+                              border={'1px'}
+                              rounded="0"
+                              bgColor={'whiteAlpha.500'}
+                              placeholder={'your-email@iiitb.ac.in'}
+                              _placeholder={{ color: 'white' }}
+                            />
+                            {form.errors.email && form.touched.email && (
+                              <FormErrorMessage>
+                                {form.errors.email}
+                              </FormErrorMessage>
+                            )}
+                          </FormControl>
+                        )}
+                      </Field>
+                      <Field name="password">
+                        {({ field }) => (
+                          <FormControl isRequired>
+                            <FormLabel>Password</FormLabel>
+                            <Input
+                              type="password"
+                              {...field}
+                              border={'1px'}
+                              rounded="0"
+                              bgColor={'whiteAlpha.500'}
+                              placeholder={'**********'}
+                              _placeholder={{ color: 'white' }}
+                            />
+                          </FormControl>
+                        )}
+                      </Field>
+                      <Stack spacing={10}>
+                        <Stack
+                          direction={{ base: 'column', sm: 'row' }}
+                          align={'start'}
+                          justify={'space-between'}
+                        >
+                          {/* <Field name="rememberMe">
                                                     {({ field }) => (
                                                         <Checkbox {...field}>Remember me</Checkbox>
                                                     )}
                                                 </Field> */}
-                                                <Link color={'#DC35AA'} as={ReactRouterLink} to={'/forgot'}>
-                                                    Forgot password?
-                                                </Link>
-                                            </Stack>
-                                            <Button
-                                                type="submit"
-                                                variant="custom"
-                                                bg={'red'}
-                                                color={'white'}
-                                                _hover={{
-                                                    bg: 'red.400',
-                                                }}
-                                                alignItems="center"
-                                                as={motion.button}
-                                                whileTap={{ scale: 0.9 }}
-                                                rounded='0'
-                                                isLoading={isSubmitting}
-                                            >
-                                                Sign in
-                                            </Button>
-                                            {
-                                                caughtError ? <Text color="red">Wrong credentials entered</Text> : <></>
-                                            }
-                                        </Stack>
-                                    </Stack>
-                                </Form>
-                            )}
-                        </Formik>
-                    </Box>
-                </Stack>
-            </Flex>
-        </Container>
+                          <Link
+                            color={'#44d130'}
+                            as={ReactRouterLink}
+                            to={'/forgot'}
+                          >
+                            Forgot password?
+                          </Link>
+                        </Stack>
+                        <Button
+                          type="submit"
+                          variant="custom"
+                          bg={'red'}
+                          color={'white'}
+                          _hover={{
+                            bg: 'red.400',
+                          }}
+                          alignItems="center"
+                          as={motion.button}
+                          whileTap={{ scale: 0.9 }}
+                          rounded="0"
+                          isLoading={isSubmitting}
+                        >
+                          Sign in
+                        </Button>
+                        {caughtError ? (
+                          <Text color="red">Wrong credentials entered</Text>
+                        ) : (
+                          <></>
+                        )}
+                      </Stack>
+                    </Stack>
+                  </Form>
+                )}
+              </Formik>
+            </Box>
+          </Stack>
+        </Flex>
+      </Container>
     );
 }
