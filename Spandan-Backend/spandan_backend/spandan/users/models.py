@@ -76,7 +76,7 @@ def password_reset_token_created(sender, instance, reset_password_token, *args, 
 
     send_mail(
         # title:
-        "Spandan 2023: Login steps ahead for {}".format(reset_password_token.user.user_name),
+        "Spandan 2025: Login steps ahead for {}".format(reset_password_token.user.user_name),
         # message:
         email_plaintext_message,
         # from:

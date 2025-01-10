@@ -32,6 +32,16 @@ const ChangePassword = () => {
     const { token } = useParams();
     const history = useNavigate();
 
+    const validatePassword = value => {
+      let error;
+      if (!value) {
+        error = 'Password is required';
+      } else if (value.length < 8) {
+        error = 'Password must contain at least 8 characters';
+      }
+      return error;
+    };
+
     const handleSubmit = (values, actions) => {
         if (values.password !== values.changePassword) {
             actions.setFieldError("changePassword", "Passwords do not match");
@@ -49,92 +59,120 @@ const ChangePassword = () => {
     };
 
     return (
-        <Container page_name="Change Password">
-            <Formik
-                initialValues={{
-                    password: '',
-                    changePassword: ''
-                }}
-                onSubmit={handleSubmit}
-            >
-                {({ values, errors, touched }) => (
-                    <Form>
-                        <Flex align={'center'} justify={'center'} bg={'none'}>
-                            <Stack spacing={8} mx={'auto'} minW={{ base: '80vw', lg: '40vw' }} py={4} px={6}>
-                                <Stack align={'center'}>
-                                    <Heading fontSize={'4xl'} textAlign={'center'}>
-                                        Change Password
-                                    </Heading>
-                                </Stack>
-                                <Box
-                                    border={'2px'}
-                                    rounded={'none'}
-                                    bg={"black"}
-                                    p={8}
-                                >
-                                    <Field name="password">
-                                        {({ field }) => (
-                                            <FormControl id="password" isRequired>
-                                                <FormLabel>Enter New Password</FormLabel>
-                                                <InputGroup>
-                                                    <Input rounded="none"
-                                                        type={'password'}
-                                                        {...field}
-                                                        border={"1px"}
-                                                        bgColor={'whiteAlpha.500'} placeholder={'**********'} _placeholder={{color:'white'}}
-                                                    />
-                                                </InputGroup>
-                                            </FormControl>
-                                        )}
-                                    </Field>
-                                    <Field name="changePassword">
-                                        {({ field }) => (
-                                            <FormControl id="changePassword" isRequired isInvalid={errors.changePassword && touched.changePassword}>
-                                                <FormLabel>Enter Password Again</FormLabel>
-                                                <InputGroup>
-                                                    <Input
-                                                        rounded="none"
-                                                        type={showPassword ? 'text' : 'password'}
-                                                        {...field}
-                                                        border={'1px'}
-                                                        bgColor={'whiteAlpha.500'} placeholder={'**********'} _placeholder={{color:'white'}}
-                                                    />
-                                                    <InputRightElement h={'full'}>
-                                                        <Button
-                                                            variant={'ghost'}
-                                                            onClick={() => setShowPassword((showPassword) => !showPassword)}
-                                                        >
-                                                            {showPassword ? <ViewIcon /> : <ViewOffIcon />}
-                                                        </Button>
-                                                    </InputRightElement>
-                                                </InputGroup>
-                                                <FormErrorMessage>{errors.changePassword}</FormErrorMessage>
-                                            </FormControl>
-                                        )}
-                                    </Field>
+      <Container page_name="Change Password">
+        <Formik
+          initialValues={{
+            password: '',
+            changePassword: '',
+          }}
+          onSubmit={handleSubmit}
+        >
+          {({ values, errors, touched }) => (
+            <Form>
+              <Flex align={'center'} justify={'center'} bg={'none'}>
+                <Stack
+                  spacing={8}
+                  mx={'auto'}
+                  minW={{ base: '80vw', lg: '40vw' }}
+                  py={4}
+                  px={6}
+                >
+                  <Stack align={'center'}>
+                    <Heading fontSize={'4xl'} textAlign={'center'}>
+                      Change Password
+                    </Heading>
+                  </Stack>
+                  <Box border={'2px'} rounded={'none'} bg={'black'} p={8}>
+                    <Field name="password" validate={validatePassword}>
+                      {({ field, form }) => (
+                        <FormControl
+                          id="password"
+                          isRequired
+                          isInvalid={
+                            form.errors.password && form.touched.password
+                          }
+                        >
+                          <FormLabel>Enter New Password</FormLabel>
+                          <InputGroup>
+                            <Input
+                              rounded="none"
+                              type={'password'}
+                              {...field}
+                              border={'1px'}
+                              bgColor={'whiteAlpha.500'}
+                              placeholder={'**********'}
+                              _placeholder={{ color: 'white' }}
+                            />
+                          </InputGroup>
+                          {form.errors.password && form.touched.password && (
+                            <FormErrorMessage>
+                              {form.errors.password}
+                            </FormErrorMessage>
+                          )}
+                        </FormControl>
+                      )}
+                    </Field>
+                    <Field name="changePassword">
+                      {({ field }) => (
+                        <FormControl
+                          id="changePassword"
+                          isRequired
+                          isInvalid={
+                            errors.changePassword && touched.changePassword
+                          }
+                        >
+                          <FormLabel>Enter Password Again</FormLabel>
+                          <InputGroup>
+                            <Input
+                              rounded="none"
+                              type={showPassword ? 'text' : 'password'}
+                              {...field}
+                              border={'1px'}
+                              bgColor={'whiteAlpha.500'}
+                              placeholder={'**********'}
+                              _placeholder={{ color: 'white' }}
+                            />
+                            <InputRightElement h={'full'}>
+                              <Button
+                                variant={'ghost'}
+                                onClick={() =>
+                                  setShowPassword(showPassword => !showPassword)
+                                }
+                              >
+                                {showPassword ? <ViewIcon /> : <ViewOffIcon />}
+                              </Button>
+                            </InputRightElement>
+                          </InputGroup>
+                          <FormErrorMessage>
+                            {errors.changePassword}
+                          </FormErrorMessage>
+                        </FormControl>
+                      )}
+                    </Field>
 
-                                    <Stack spacing={10} pt={4}>
-                                        <Button
-                                            variant={"custom"}
-                                            bg={'red'}
-                                            color={'black'}
-                                            _hover={{
-                                                bg: 'red.400',
-                                            }}
-                                            alignItems="center"
-                                            type="submit"
-                                            as={motion.button}
-                                            whileTap={{ scale: 0.9 }}
-                                        >
-                                            Change Password
-                                        </Button>
-                                    </Stack>
-                                </Box>
-                            </Stack>
-                        </Flex >
-                    </Form>)}
-            </Formik>
-        </Container >
+                    <Stack spacing={10} pt={4}>
+                      <Button
+                        variant={'custom'}
+                        bg={'red'}
+                        color={'black'}
+                        _hover={{
+                          bg: 'red.400',
+                        }}
+                        alignItems="center"
+                        type="submit"
+                        as={motion.button}
+                        whileTap={{ scale: 0.9 }}
+                      >
+                        Change Password
+                      </Button>
+                    </Stack>
+                  </Box>
+                </Stack>
+              </Flex>
+            </Form>
+          )}
+        </Formik>
+      </Container>
     );
 }
 

@@ -373,9 +373,7 @@ const Alumni_Signup = () => {
                       )}
                     </Field>
 
-                    <Field
-                      name="confirmPassword"
-                    >
+                    <Field name="confirmPassword">
                       {({ field, form }) => (
                         <FormControl
                           id="confirmPassword"
