@@ -447,8 +447,8 @@ const Navbar = () => {
                   as={motion.button}
                   whileTap={{ scale: 0.9 }}
                   color={'white'}
-                  fontFamily="heading"
-                  fontSize={'25'}
+                  fontFamily="akshar"
+                  fontSize={'4vh'}
                   fontWeight={'medium'}
                   w="full"
                   _hover={{ color: '#44d130' }}

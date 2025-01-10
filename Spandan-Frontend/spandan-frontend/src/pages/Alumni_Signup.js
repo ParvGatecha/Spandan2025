@@ -52,6 +52,28 @@ const Alumni_Signup = () => {
         // }
         return error;
     };
+
+    const validatePassword = value => {
+      let error;
+      if (!value) {
+        error = 'Password is required';
+      } else if (value.length < 8) {
+        error = 'Password must contain at least 8 characters';
+      }
+      return error;
+    };
+
+    const validateConfirmPassword = (value, values) => {
+      let error;
+      if (!value) {
+        error = 'Confirm Password is required';
+      } else if (value !== values.password) {
+        error = 'Passwords must match';
+      }
+      return error;
+    };
+
+
     const validateRoll = (value) => {
         let error;
         
@@ -107,7 +129,7 @@ const Alumni_Signup = () => {
         const userJson = {
           user_name: values.name,
           email: values.email,
-          first_name: 'Amar',
+          first_name: values.name,
           password: values.password,
           rollNum: values.rollNumber,
           otp: values.otp,
@@ -312,9 +334,15 @@ const Alumni_Signup = () => {
                         </FormControl>
                       )}
                     </Field>
-                    <Field name="password">
-                      {({ field }) => (
-                        <FormControl id="password" isRequired>
+                    <Field name="password" validate={validatePassword}>
+                      {({ field, form }) => (
+                        <FormControl
+                          id="password"
+                          isRequired
+                          isInvalid={
+                            form.errors.password && form.touched.password
+                          }
+                        >
                           <FormLabel>Password</FormLabel>
                           <InputGroup>
                             <Input
@@ -336,12 +364,27 @@ const Alumni_Signup = () => {
                               </Button>
                             </InputRightElement>
                           </InputGroup>
+                          {form.errors.password && form.touched.password && (
+                            <FormErrorMessage>
+                              {form.errors.password}
+                            </FormErrorMessage>
+                          )}
                         </FormControl>
                       )}
                     </Field>
-                    <Field name="confirm_password">
-                      {({ field }) => (
-                        <FormControl id="confirm_password" isRequired>
+
+                    <Field
+                      name="confirmPassword"
+                    >
+                      {({ field, form }) => (
+                        <FormControl
+                          id="confirmPassword"
+                          isRequired
+                          isInvalid={
+                            form.errors.confirmPassword &&
+                            form.touched.confirmPassword
+                          }
+                        >
                           <FormLabel>Confirm Password</FormLabel>
                           <InputGroup>
                             <Input
@@ -353,8 +396,8 @@ const Alumni_Signup = () => {
                             />
                             <InputRightElement h={'full'}>
                               <Button
-                                id="button1"
                                 variant={'ghost'}
+                                id="button2"
                                 onClick={() =>
                                   setShowPassword(showPassword => !showPassword)
                                 }
@@ -363,9 +406,16 @@ const Alumni_Signup = () => {
                               </Button>
                             </InputRightElement>
                           </InputGroup>
+                          {form.errors.confirmPassword &&
+                            form.touched.confirmPassword && (
+                              <FormErrorMessage>
+                                {form.errors.confirmPassword}
+                              </FormErrorMessage>
+                            )}
                         </FormControl>
                       )}
                     </Field>
+
                     <Stack direction={{ base: 'column', md: 'row' }}>
                       <Field name="sex">
                         {({ field, form }) => (

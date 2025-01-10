@@ -45,7 +45,7 @@ class CustomOtpVerifiy_userCreate(APIView):
 
     def post(self, request):
         try:
-
+            print(request.data)
             serializer = CustomUserSerializer(data=request.data)
             if serializer.is_valid():    
                 email = request.data.get('email')
